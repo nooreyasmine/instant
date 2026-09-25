@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Insta demo</title>
+  <title>PixShare</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -11,8 +11,11 @@
 <!-- LOGIN / SIGNUP -->
 <section id="auth">
   <div class="auth-box">
-    <h1 class="logo">Instagram</h1>
+    <h1 class="logo">PixShare</h1>
+    <p style="font-size:12px;color:var(--mut);margin-top:-8px">A student demo project — not affiliated with any social media company.</p>
     <form id="authForm">
+      <input id="email" type="email" placeholder="Email" hidden>
+      <input id="fullname" placeholder="Full name" hidden>
       <input id="username" placeholder="Username" required>
       <input id="password" type="password" placeholder="Password" minlength="4" required>
       <button class="pri" id="authBtn">Log in</button>
@@ -26,7 +29,7 @@
 <!-- APP -->
 <div id="app" hidden>
   <nav>
-    <h1 class="logo">Instagram</h1>
+    <h1 class="logo">PixShare</h1>
     <button data-view="home">🏠 <span>Home</span></button>
     <button data-view="search">🔍 <span>Search</span></button>
     <button data-view="reels">🎬 <span>Reels</span></button>
