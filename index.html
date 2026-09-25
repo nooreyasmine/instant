@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Instagram Clone</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- LOGIN / SIGNUP -->
+<section id="auth">
+  <div class="auth-box">
+    <h1 class="logo">Instagram</h1>
+    <form id="authForm">
+      <input id="email" type="email" placeholder="Email" hidden>
+      <input id="fullname" placeholder="Full name" hidden>
+      <input id="username" placeholder="Username" required>
+      <input id="password" type="password" placeholder="Password" minlength="4" required>
+      <button class="pri" id="authBtn">Log in</button>
+      <p id="authErr" class="err"></p>
+    </form>
+    <p><span id="authText">Don't have an account?</span> <a href="#" id="authToggle">Sign up</a></p>
+    <small>Demo login: maya_travels / demo</small>
+  </div>
+</section>
+
+<!-- APP -->
+<div id="app" hidden>
+  <nav>
+    <h1 class="logo">Instagram</h1>
+    <button data-view="home">🏠 <span>Home</span></button>
+    <button data-view="search">🔍 <span>Search</span></button>
+    <button data-view="reels">🎬 <span>Reels</span></button>
+    <button data-view="messages">✈️ <span>Messages</span></button>
+    <button data-act="create">➕ <span>Create</span></button>
+    <button data-view="profile">👤 <span>Profile</span></button>
+    <button data-act="theme">🌓 <span>Theme</span></button>
+  </nav>
+  <main id="view"></main>
+</div>
+
+<div id="modal" hidden></div>
+<script src="script.js"></script>
+</body>
+</html>
